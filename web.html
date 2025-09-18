@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Glamour Point</title>
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">✨ The Glamour Point</div>
+    <nav>
+
+       <ul>
+        <li><a href="makeup.html">Makeup</a></li>
+        <li><a href="skincare.html">Skincare</a></li>
+        <li><a href="hygiene.html">Body & Bath</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="./logo .webp" alt="Sample" width="1000" height="1000">
+    <h1>Welcome to The Glamour Point</h1>
+    <p>Discover premium makeup, skincare, and hygiene products made for you.</p>
+    <button onclick="location.href='makeup.html'">Shop Makeup</button>
+  </section>
+
+  <!-- Category Previews -->
+  <section class="products">
+    <h2>Main Categories</h2>
+    <div class="product-grid">
+      <a href="makeup.html" class="product-card">
+        <img src="./make up 2.webp" alt="Makeup">
+        <h3>💄 Makeup</h3>
+        <p>Explore lipsticks, foundation, eyeshadow & more.</p>
+      </a>
+      <a href="skincare.html" class="product-card">
+        <img src="./skin care 2.jpeg" alt="Skincare">
+        <h3>🧴 Skincare</h3>
+        <p>Moisturizers, serums, and face care for glowing skin.</p>
+      </a>
+      <a href="bodybath.html" class="product-card">
+        <img src="./hygiene.jpg" alt="Body & Bath">
+        <h3>🛁 Body & Bath</h3>
+        <p>Shower gels, scrubs, body lotions & more.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="return submitForm()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The Glamour Point. All rights reserved.</p>
+  </footer>
+  <script src="web.js"></script>
+
+</body>
+</html>

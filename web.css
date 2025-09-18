@@ -1,0 +1,200 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #fff7f7, #ffe8f0);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(90deg, #111, #333);
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  header .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #f78fb3;
+    transform: scale(1.1);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url("https://images.unsplash.com/photo-1512207846876-d8f39eeb1b38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80") center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem;
+    position: relative;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .hero h1, .hero p, .hero button {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero button {
+    padding: 1rem 2rem;
+    border: none;
+    background: #f78fb3;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  .hero button:hover {
+    background: #ff99cc;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+  }
+  
+  /* Products Section */
+  .products {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .products h2 {
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    color: #111;
+    font-weight: 600;
+  }
+  
+  /* Horizontal Scroll Categories */
+  .product-grid {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .product-card {
+    background: #fff;
+    border-radius: 20px;
+    min-width: 250px;
+    flex: 0 0 auto;
+    padding: 1.2rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    scroll-snap-align: center;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 3rem 2rem;
+    background: linear-gradient(to right, #ffe3ec, #ffe9f0);
+    border-top: 3px solid #f78fb3;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  form input, form textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  form button {
+    padding: 1rem;
+    border: none;
+    background: #f78fb3;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  form button:hover {
+    background: #ff99cc;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #111;
+    color: #fff;
+    padding: 1.2rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
